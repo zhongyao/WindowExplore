@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="#ff0000"
+              android:layout_height="60dp"
+              android:background="#ffffff"
               android:orientation="vertical">
 
     <TextView
+        android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:gravity="center"
+        android:background="#0000ff"
         android:text="圣诞节快乐！！！"/>
+
     <LinearLayout
+        android:id="@+id/ll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#00ff00"></LinearLayout>
+        android:layout_height="200dp"
+        android:background="#00ff00"
+        android:orientation="vertical">
+
+    </LinearLayout>
 
 </LinearLayout>
