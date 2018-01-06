@@ -1,21 +1,33 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+    </style>
+
+    <style name="TranslucentTheme" parent="AppTheme">
     </style>
 
     <style name="RightDialog">
+        <!--设置全屏-->
         <item name="android:windowFullscreen">true</item>
+        <!--设置是否有actionbar-->
         <item name="android:windowActionBar">false</item>
+        <!--是否浮在Activity之上-->
         <item name="android:windowIsFloating">false</item>
+        <!--去除标题栏-->
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBarOverlay">false</item>
+        <!--设置Window是否支持模糊效果-->
         <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.9</item>
+        <!--模糊效果程度:0完全透明;1完全不透明-->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!--是否是半透明的-->
         <item name="android:windowIsTranslucent">true</item>
+        <!--设置Dialog的背景-->
         <item name="android:windowBackground">@color/transparent</item>
+        <!--设置动画style-->
         <item name="android:windowAnimationStyle">@style/RightDialogAnimation</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <style name="RightDialogAnimation">
